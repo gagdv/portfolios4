@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav"></div>
+
+<h2>Animated Sidenav Example</h2>
+<p>Click on the element below to open the side navigation menu.</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9881;</span>
+     
+<div id="mySidebar"></div>
+<script src="js/side.js"></script>
+<script src="js/jim.js"></script>
+<script>
+//    Library.greet("Hallo");
+
+    var settings = {
+        'language': 'NL', 
+        'controlAlign': 'right',
+        'fwContainer': 'mySidebar',
+        'cssFiles': ['nightmode', 'daymode']
+    };
+    
+    var jimmy = new Library2(settings);
+    jimmy.greet();
+    
+    </script>
+</body>
+</html> 
